@@ -1,0 +1,7 @@
+colorama
+termcolor
+stdiomask
+SpeechRecognition
+tqdm
+selenium
+webdriver_manager
