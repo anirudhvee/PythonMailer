@@ -76,7 +76,7 @@ class mailbox:#mailbox object
         WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable(NEXTBUTTON2)).click()
         sleep(6)
         self.driver.get('https://mail.google.com/mail/u/0/#inbox')
-        self.driver.execute_script('alert("LOG OUT NOT REQUIRED AS COOCKIES ARE NOT STORED");')
+        self.driver.execute_script('alert("LOG OUT NOT REQUIRED AS COOKIES ARE NOT STORED");')
         '''if WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable(CONTINUE)):
             mypath = 'QuickMail/'
             f = open(mypath+'log.log','a+')
@@ -84,7 +84,7 @@ class mailbox:#mailbox object
             f.close()
             sleep(2)
             self.driver.get('https://mail.google.com/mail/u/0/#inbox')
-            self.driver.execute_script('alert("LOG OUT NOT REQUIRED AS COOCKIES ARE NOT STORED");')'''
+            self.driver.execute_script('alert("LOG OUT NOT REQUIRED AS COOKIES ARE NOT STORED");')'''
 
 
 
@@ -100,7 +100,7 @@ class mailbox:#mailbox object
         f = open(mypath+'log.log','a+')
         f.write('\n[*] ACCOUNT '+self.user+' OPENED TO VIEW ' + '\nAT ' + datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
         f.close()
-        self.driver.execute_script('alert("LOG OUT NOT REQUIRED AS COOCKIES ARE NOT STORED");')
+        self.driver.execute_script('alert("LOG OUT NOT REQUIRED AS COOKIES ARE NOT STORED");')
 
 
     def outlook(self):#open outlook/hotmail inbox
@@ -120,7 +120,7 @@ class mailbox:#mailbox object
         f.write('\n[*] ACCOUNT '+self.user+' OPENED TO VIEW ' + '\nAT ' + datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
         f.close()
         self.driver.get('https://outlook.live.com/mail/0/inbox')
-        self.driver.execute_script('alert("LOG OUT NOT REQUIRED AS COOCKIES ARE NOT STORED");')
+        self.driver.execute_script('alert("LOG OUT NOT REQUIRED AS COOKIES ARE NOT STORED");')
 
 
     def apple(self):#open apple mail inbox
@@ -139,7 +139,7 @@ class mailbox:#mailbox object
         f = open(mypath+'log.log','a+')
         f.write('\n[*] ACCOUNT '+self.user+' OPENED TO VIEW ' + '\nAT ' + datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
         f.close()
-        self.driver.execute_script('alert("LOG OUT NOT REQUIRED AS COOCKIES ARE NOT STORED");')
+        self.driver.execute_script('alert("LOG OUT NOT REQUIRED AS COOKIES ARE NOT STORED");')
 
 
     def rediff(self):#open rediffmail inbox
@@ -153,7 +153,7 @@ class mailbox:#mailbox object
         f = open(mypath+'log.log','a+')
         f.write('\n[*] ACCOUNT '+self.user+' OPENED TO VIEW ' + '\nAT ' + datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
         f.close()
-        self.driver.execute_script('alert("LOG OUT NOT REQUIRED AS COOCKIES ARE NOT STORED");')
+        self.driver.execute_script('alert("LOG OUT NOT REQUIRED AS COOKIES ARE NOT STORED");')
 
 
 def setup():#setup to be done for the first time
